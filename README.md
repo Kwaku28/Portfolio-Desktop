@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [My Portfolio](https://kwaku28.github.io/Portfolio-Desktop/)
+- [My Portfolio](https://...)
 
 <!-- GETTING STARTED -->
 
