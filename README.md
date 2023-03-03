@@ -114,7 +114,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Animation and Transtions]**
 - [ ] **[Pop-up Modal]**
 - [ ] **[Mobile Menu]**
 
