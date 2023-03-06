@@ -110,6 +110,12 @@ You can deploy this project using:
 - Twitter: [@kwakuamoafo](https://twitter.com/kwakuamoafo)
 - LinkedIn: [lawrenceamoafo](https://linkedin.com/in/lawrenceamoafo)
 
+👤 **Gladwin Tshepo Ramantso**
+
+- GitHub: [@tsheporamantso](https://github.com/gladwintsheporamantso)
+- Twitter: [@ramgt001](https://twitter.com/home)
+- LinkedIn: [Tshepo Gladwin Ramantso](https://linkedin.com/in/tshepo-ramantso-b6a35433/)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
