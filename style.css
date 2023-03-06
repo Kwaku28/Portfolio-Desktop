@@ -60,7 +60,24 @@ footer a {
 
 .links li a {
   color: #172b4d;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
+  transition: all 0.3s ease-out 0s;
+}
+
+.social li a {
+  font-size: 20px;
+  color: #505f79;
+}
+
+footer .social a {
+  font-size: 30px;
+}
+
+.links li a:hover {
+  color: #36b37f;
+  font-size: 22px;
 }
 
 .vector {
@@ -133,11 +150,61 @@ p {
 .social li {
   text-decoration: none;
   list-style: none;
+  transition: transform 0.4s;
 }
 
-.social li a {
-  font-size: 20px;
-  color: #505f79;
+.server li {
+  list-style: none;
+  padding: 8px 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  color: #172b4d;
+  transition: all 0.5s ease-out;
+}
+
+.works li {
+  list-style: none;
+}
+
+.language li {
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  transition: all 0.5s ease-in;
+}
+
+.lang li {
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  transition: all 0.5s ease-in;
+}
+
+.social li:hover {
+  transform: scale(1.5);
+}
+
+.social li a:hover {
+  color: #36b37f;
 }
 
 main {
@@ -205,17 +272,14 @@ main {
   gap: 8px;
 }
 
-.server li {
-  list-style: none;
-  padding: 8px 10px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  color: #172b4d;
+.lang li:hover {
+  background: #36b37f;
+  color: #fff;
+}
+
+.server li:hover {
+  background: #36b37f;
+  color: #fff;
 }
 
 .button {
@@ -291,10 +355,6 @@ main {
   height: 352px;
 }
 
-.works li {
-  list-style: none;
-}
-
 .skills {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -322,17 +382,9 @@ main {
   gap: 8px;
 }
 
-.language li {
-  align-items: center;
-  padding: 12px;
-  background: #fff;
-  border-radius: 8px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
+.language li:hover {
+  background: #36b37f;
+  color: #fff;
 }
 
 .lang {
@@ -341,19 +393,6 @@ main {
   flex-wrap: wrap;
   gap: 8px;
   padding-bottom: 52px;
-}
-
-.lang li {
-  align-items: center;
-  padding: 12px;
-  background: #fff;
-  border-radius: 8px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
 }
 
 .contact {
@@ -438,10 +477,6 @@ footer .social {
   justify-content: center;
   margin-bottom: 10px;
   gap: 30px;
-}
-
-footer .social a {
-  font-size: 30px;
 }
 
 @media screen and (max-width: 768px) {
