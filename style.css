@@ -23,6 +23,7 @@ header {
   background-image: url(./Images/Header-llustration-desktop.png);
   background-size: contain;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .header {
@@ -209,6 +210,7 @@ p {
 
 main {
   padding-top: 70px;
+  overflow-x: hidden;
 }
 
 .projects {
@@ -511,13 +513,15 @@ footer .social {
     overflow: hidden;
     top: 0;
     left: 100%;
-    height: 100vh;
+    height: 92vh;
     transition: all 0.5s ease-in;
     z-index: 4;
     background: #fff;
     mix-blend-mode: normal;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     padding-top: 50px;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
   }
 
   .links.active {
