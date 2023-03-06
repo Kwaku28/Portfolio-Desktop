@@ -23,11 +23,12 @@ header {
   background-image: url(./Images/Header-llustration-desktop.png);
   background-size: contain;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 24px;
 }
 
@@ -80,19 +81,19 @@ footer .social a {
   font-size: 22px;
 }
 
+.vector span {
+  width: 100%;
+  border: 1px solid #28352f;
+  display: block;
+}
+
 .vector {
   margin-top: 17px;
-  margin-right: 35px;
   width: 18px;
   height: 12px;
   right: 10%;
   z-index: 5;
-  cursor: pointer;
-}
-
-.vector span {
-  width: 100%;
-  border: 1px solid #28352f;
+  position: absolute;
   display: none;
 }
 
@@ -209,6 +210,7 @@ p {
 
 main {
   padding-top: 70px;
+  overflow-x: hidden;
 }
 
 .projects {
@@ -487,6 +489,7 @@ footer .social {
 
   .header {
     width: 100%;
+    justify-content: space-between;
   }
 
   .logo {
@@ -504,11 +507,69 @@ footer .social {
   }
 
   .links {
-    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 100%;
+    height: 92vh;
+    transition: all 0.5s ease-in;
+    z-index: 4;
+    background: #fff;
+    mix-blend-mode: normal;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    padding-top: 50px;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 48px;
   }
 
-  .vector span {
+  .links.active {
+    left: 0;
+  }
+
+  .links li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 10px 30px;
+  }
+
+  .links li a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #3a4a42;
+  }
+
+  .links li a:hover {
+    font-size: 40px;
+  }
+
+  .vector {
     display: block;
+    cursor: pointer;
+  }
+
+  .vector.active {
+    position: fixed;
+  }
+
+  .vector.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .vector.active span:nth-child(1) {
+    transform: translateY(2px) rotate(45deg);
+    top: auto;
+  }
+
+  .vector.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+    top: auto;
   }
 
   main {
