@@ -104,7 +104,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Lawrence Amoafo**
 
 - GitHub: [@Kwaku28](https://github.com/Kwaku28)
 - Twitter: [@kwakuamoafo](https://twitter.com/kwakuamoafo)
