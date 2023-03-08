@@ -553,12 +553,6 @@ form {
   gap: 5px;
 }
 
-form div {
-  display: flex;
-  justify-content: start;
-  margin-right:24px;
-}
-
 #fname {
   padding: 10px;
   width: 600px;
@@ -597,6 +591,12 @@ form div {
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
 }
 
 footer {
