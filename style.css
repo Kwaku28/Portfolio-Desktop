@@ -550,6 +550,13 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
+}
+
+form div {
+  display: flex;
+  justify-content: start;
+  margin-right:24px;
 }
 
 #fname {
