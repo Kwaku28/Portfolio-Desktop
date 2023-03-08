@@ -416,7 +416,6 @@ main {
   grid-template-columns: auto auto auto auto auto auto;
   width: 25px;
 }
-
 #overlay {
   position: fixed;
   opacity: 0;
