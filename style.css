@@ -317,11 +317,13 @@ main {
   z-index: 10;
   background: #fff;
   border: 1px solid #ebecf0;
+  border-radius: 20px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   width: 95%;
   max-width: 80%;
   padding: 24px;
   height: 95%;
+  overflow-y: scroll;
 }
 
 .modal.active {
@@ -341,7 +343,7 @@ main {
 
 .modal-image {
   width: 100%;
-  height: 290px;
+  height: 616px;
   transition: transform 0.5s;
 }
 
@@ -377,6 +379,10 @@ main {
   gap: 12px;
 }
 
+.button1 img {
+  width: 12px;
+}
+
 .button1 {
   background: #36b37f;
   border-radius: 4px;
@@ -384,11 +390,12 @@ main {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 24px;
   padding: 12px;
   color: #fff;
   text-decoration: none;
+  width: 120px;;
 }
 
 .button1:hover {
@@ -425,7 +432,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #c1c7d0;
+  background: #484849;
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -762,12 +769,12 @@ footer .social {
   }
 
   .modal-image {
-    height: 20%;
+    height: 220px;
   }
 
   .modal-btns {
     position: absolute;
-    top: 90%;
+    top: 110%;
     right: 2%;
     width: 95%;
     height: 55px;
@@ -863,6 +870,12 @@ footer .social {
   }
 }
 
+@media screen and (max-width: 640px) {
+  .modal-btns {
+    top: 125%;
+  }
+}
+
 @media screen and (max-width: 512px) {
   header {
     width: auto;
@@ -899,12 +912,16 @@ footer .social {
     width: 250px;
   }
 
+  .modal {
+    overflow-y: scroll;
+  }
+
   .modal-image {
-    height: 20%;
+    height: 220px;
   }
 
   .modal-btns {
-    top: 90%;
+    top: 122%;
     right: 2%;
     width: 95%;
     height: 45px;
@@ -926,6 +943,7 @@ footer .social {
 
   .modal-content .server {
     grid-template-columns: auto auto auto;
+    gap: 5px;
   }
 
   .text1 {
@@ -1009,6 +1027,14 @@ footer .social {
   .text {
     font-family: "Poppins", sans-serif;
     width: 250px;
+  }
+
+  .modal {
+    overflow-y: scroll;
+  }
+
+  .modal-btns {
+    top: 140%;
   }
 
   .about {
