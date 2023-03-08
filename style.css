@@ -21,9 +21,10 @@ header {
   gap: 24px;
   padding-bottom: 400px;
   background-image: url(./Images/Header-llustration-desktop.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .header {
@@ -537,7 +538,7 @@ main {
   padding: 82px 134px 225px;
   gap: 24px;
   background-image: url(./Images/illustration-contact-form-desktop.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -758,6 +759,10 @@ footer .social {
   .disabled {
     text-align: center;
     margin-top: 45px;
+  }
+
+  .container {
+    grid-template-columns: auto auto;
   }
 
   .projects {
