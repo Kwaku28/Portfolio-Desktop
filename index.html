@@ -83,7 +83,7 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-              <button type="button" class="button">See Project</button>
+              <button type="button" class="button" data-modal-target="#1" id="1">See Project</button>
             </div>
           </div>
 
@@ -96,7 +96,7 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-              <button type="button" class="button">See Project</button>
+              <button type="button" class="button" data-modal-target="#2" id="2">See Project</button>
             </div>
           </div>
 
@@ -109,7 +109,7 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-              <button type="button" class="button">See Project</button>
+              <button type="button" class="button" data-modal-target="#3" id="3">See Project</button>
             </div>
           </div>
 
@@ -122,7 +122,7 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-              <button type="button" class="button">See Project</button>
+              <button type="button" class="button" data-modal-target="#4" id="4">See Project</button>
             </div>
           </div>
 
@@ -135,7 +135,7 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-              <button type="button" class="button">See Project</button>
+              <button type="button" class="button" data-modal-target="#5" id="5">See Project</button>
             </div>
           </div>
 
@@ -148,7 +148,7 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-              <button type="button" class="button">See Project</button>
+              <button type="button" class="button" data-modal-target="#6" id="6">See Project</button>
             </div>
           </div>
         </div>
@@ -212,6 +212,28 @@
           </ul>
         </div>
       </section>
+
+      <div class="modal" id="modal">
+        <button data-close-button class="close-button">&times;</button>
+        <img class="modal-image" id="modal-image" src="" alt="Project Image">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 id="modal-title"></h4>
+            <div class="modal-btns">
+              <a href="#" id="live-link" class="button1"
+                >See live &nbsp;
+                <img src="Images/Icon.png" alt="live" />
+              </a>
+              <a href="#" id="source-link" class="button1"
+                >See Source &nbsp; <img src="Images/Group.png" alt="github"
+              /></a>
+            </div>
+          </div>
+          <ul class="server" id="modal-server"></ul>
+          <p class="text1" id="modal-text"></p>
+        </div>
+      </div>
+      <div id="overlay"></div>
 
       <section class="contact" id="contact">
         <p>
