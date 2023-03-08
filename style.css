@@ -416,6 +416,7 @@ main {
   grid-template-columns: auto auto auto auto auto auto;
   width: 25px;
 }
+
 #overlay {
   position: fixed;
   opacity: 0;
@@ -424,7 +425,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #413c3b;
+  background: #C1C7D0;
   mix-blend-mode: multiply;
   pointer-events: none;
 }
