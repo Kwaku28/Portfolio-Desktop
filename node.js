@@ -193,16 +193,16 @@ const isUpperCaseEmail = (email) => {
   return false;
 };
 
-contact.addEventListener('submit', (event) => {
+formValidation.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = event.target.email.value;
   const validEmail = !isUpperCaseEmail(email);
 
   if (validEmail) {
-    error.style.display = 'none';
-    contact.submit();
+    error.innerHTML = '';
+    formValidation.submit();
   } else {
     error.style.color = 'red';
-    error.innerHTML = 'Please write email in small letters';
+    error.innerHTML = 'Please Email should be in lowercase';
   }
 });
