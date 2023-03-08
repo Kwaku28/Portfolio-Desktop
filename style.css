@@ -597,6 +597,7 @@ form {
   display: flex;
   justify-content: space-between;
   margin-left: 24px;
+  gap: 10px;
 }
 
 footer {
