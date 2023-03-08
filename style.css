@@ -425,7 +425,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #C1C7D0;
+  background: #c1c7d0;
   mix-blend-mode: multiply;
   pointer-events: none;
 }
