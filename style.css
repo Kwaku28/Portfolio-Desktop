@@ -874,6 +874,11 @@ footer .social {
     width: 400px;
   }
 
+  .error {
+    margin-left: 10px;
+    width: 400px;
+  }
+
   footer {
     padding-top: 0;
   }
@@ -999,6 +1004,17 @@ footer .social {
 
   #type {
     width: 327px;
+  }
+
+  .error {
+    flex-direction: column-reverse;
+    align-items: start;
+    width: 150px;
+    gap: 0;
+  }
+
+  .display-error {
+    margin-left: -60px;
   }
 
   footer {
