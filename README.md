@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Not Available](http://...)
+- [My Portfolio](https://kwaku28.github.io/Portfolio-Desktop/)
 
 <!-- GETTING STARTED -->
 
@@ -121,7 +121,6 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Pop-up Modal]**
-- [ ] **[Mobile Menu]**
 
 <!-- CONTRIBUTING -->
 
