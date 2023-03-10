@@ -118,9 +118,9 @@ You can deploy this project using:
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Pop-up Modal]**
+- [ ] **[Pop-up Modal]** -->
 
 <!-- CONTRIBUTING -->
 
