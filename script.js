@@ -1,17 +1,15 @@
-const vectors = document.querySelector(".vector");
-const navLink = document.querySelector(".links");
+const vectors = document.querySelector('.vector');
+const navLink = document.querySelector('.links');
 
-vectors.addEventListener("click", () => {
-  vectors.classList.toggle("active");
-  navLink.classList.toggle("active");
+vectors.addEventListener('click', () => {
+  vectors.classList.toggle('active');
+  navLink.classList.toggle('active');
 });
 
-document.querySelectorAll("ul.links > li").forEach((n) =>
-  n.addEventListener("click", () => {
-    vectors.classList.remove("active");
-    navLink.classList.remove("active");
-  })
-);
+document.querySelectorAll('ul.links > li').forEach((n) => n.addEventListener('click', () => {
+  vectors.classList.remove('active');
+  navLink.classList.remove('active');
+}));
 
 const project = [
   {
@@ -123,7 +121,7 @@ const project = [
   },
 ];
 
-const popupWindow = document.querySelector('.modal')
+const popupWindow = document.querySelector('.modal');
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const modalTitle = document.querySelector('#modal-title');
@@ -135,20 +133,19 @@ const source = document.querySelector('#source-link');
 const overlay = document.getElementById('overlay');
 
 function openModel(popupWindow) {
-  if (modal == null) return;
+  if (popupWindow == null) return;
   popupWindow.classList.add('active');
   overlay.classList.add('active');
 }
 
 function closeModel(popupWindow) {
-  if (modal == null) return;
+  if (popupWindow == null) return;
   popupWindow.classList.remove('active');
   overlay.classList.remove('active');
 }
 
 openModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const model = document.querySelector(button.dataset.modelTarget);
     openModel(popupWindow);
 
     project.forEach((popup) => {
@@ -165,7 +162,7 @@ openModalButtons.forEach((button) => {
         live.href = popup.liveLink;
         source.href = popup.sourceLink;
       }
-    })
+    });
   });
 });
 
@@ -178,7 +175,30 @@ overlay.addEventListener('click', () => {
 
 closeModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const model = button.closest('.modal');
     closeModel(popupWindow);
   });
+});
+
+const formValidation = document.querySelector('form');
+const error = document.querySelector('.display-error');
+
+const isUpperCaseEmail = (email) => {
+  if (/[A-Z]/.test(email)) {
+    return true;
+  }
+  return false;
+};
+
+formValidation.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = event.target.email.value;
+  const validEmail = !isUpperCaseEmail(email);
+
+  if (validEmail) {
+    error.innerHTML = '';
+    formValidation.submit();
+  } else {
+    error.style.color = 'red';
+    error.innerHTML = 'Please Email should be in lowercase';
+  }
 });
