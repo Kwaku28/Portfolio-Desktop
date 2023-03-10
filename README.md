@@ -36,21 +36,21 @@
 <details>
   <summary>HTML, CSS</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">HTML, CSS</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Github flow</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://docs.github.com/en/get-started/quickstart/github-flow">Github flow</a></li>
   </ul>
 </details>
 
 <details>
 <summary>VScode</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://code.visualstudio.com/">VScode</a></li>
   </ul>
 </details>
 
@@ -78,27 +78,7 @@ Clone this repository to your desired folder:
 
 cd my-folder
 
-git clone repo-link
-
-### Install
-
-Install this project with:
-
-### Usage
-
-To run the project, execute the following command:
-
-Press ctrl+shif+p on vscode and choose run
-
-### Run tests
-
-To run tests, run the following command:
-
-Press ctrl+shift+p on vscode and choose test
-
-### Deployment
-
-You can deploy this project using:
+git clone [repo-link](https://github.com/Kwaku28/Portfolio-Desktop.git)
 
 <!-- AUTHORS -->
 
@@ -147,7 +127,5 @@ I would like to thank all Micronauts for their support
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/Kwaku28/Portfolio-Desktop/blob/desktop-version/LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
