@@ -27,7 +27,7 @@ const project = [
       'Codepen',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'World Architectural Summit will build on the breakout success of the inaugural edition with a captivating and insightful agenda that will be discussed and debated by some of the regions best and brightest minds. The Summit will provide a platform for construction industry stakeholders to discuss a multitude of topics including future city requirements, net zero building design, resilient design strategies, future transport infrastructure, nurturing future talent and much more.',
   },
 
   {
