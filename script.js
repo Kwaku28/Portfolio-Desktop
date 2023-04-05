@@ -14,10 +14,10 @@ document.querySelectorAll('ul.links > li').forEach((n) => n.addEventListener('cl
 const project = [
   {
     id: '1',
-    featuredImage: 'Images/Snapshoot-Portfolio.png',
+    featuredImage: 'Images/First-project.PNG',
     name: 'Keeping track of hundreds of components',
-    liveLink: 'https://kwaku28.github.io/Portfolio-Desktop/',
-    sourceLink: 'https://github.com/Kwaku28/Portfolio-Desktop',
+    liveLink: 'https://kwaku28.github.io/architectural-summit/',
+    sourceLink: 'https://github.com/Kwaku28/architectural-summit',
     technologies: [
       'Codekit',
       'Github',
