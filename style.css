@@ -242,8 +242,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(./Images/Card_Img_Plaholder.png);
-  background-size: cover;
+  background-image: url(./Images/First-project.PNG);
+  background-size: contain;
   background-repeat: no-repeat;
   height: 474px;
   border: 1px solid #d0d9d4;
