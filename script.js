@@ -27,7 +27,7 @@ const project = [
       'Codepen',
     ],
     description:
-      'World Architectural Summit will build on the breakout success of the inaugural edition with a captivating and insightful agenda that will be discussed and debated by some of the regions best and brightest minds. The Summit will provide a platform for construction industry stakeholders to discuss a multitude of topics including future city requirements, net zero building design, resilient design strategies, future transport infrastructure, nurturing future talent and much more.',
+      'World Architectural Summit will build on the breakout success of the inaugural edition with a captivating and insightful agenda that will be discussed and debated by some of the regions best and brightest minds. The Summit will provide a platform for construction industry stakeholders to discuss a multitude of topics including future city requirements, net zero building design, resilient design strategies, future transport infrastructure, nurturing future talent and much more',
   },
 
   {
