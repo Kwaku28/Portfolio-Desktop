@@ -242,12 +242,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(./Images/First-project.PNG);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: #ebf0ee;
   height: 474px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+}
+
+#card1 {
+  background-image: url(./Images/First-project.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -606,6 +610,10 @@ form {
   justify-content: space-between;
   margin-left: -60px;
   gap: 10px;
+}
+
+#display-error {
+  font-size: 12px;
 }
 
 footer {
