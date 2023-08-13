@@ -85,20 +85,20 @@ const project = [
 
   {
     id: '5',
-    featuredImage: 'Images/Snapshoot-Portfolio.png',
-    name: 'Keeping track of hundreds of components',
-    liveLink: 'https://kwaku28.github.io/Portfolio-Desktop/',
-    sourceLink: 'https://github.com/Kwaku28/Portfolio-Desktop',
+    featuredImage: 'Images/Fifth-project.PNG',
+    name: 'Grow Rich (Budgeting App)',
+    liveLink: 'https://grow-rich.onrender.com/',
+    sourceLink: 'https://github.com/Kwaku28/Grow-Rich',
     technologies: [
-      'Codekit',
+      'Render',
       'Github',
-      'Javascript',
+      'Ruby',
+      'Rails',
       'Bootstrap',
       'Terminal',
-      'Codepen',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'Grow Rich is a mobile web application where you can manage your budget: you have a list of expenses associated with a budget, so that you can see how much money you spent and on what. You have the flexibility to add budget and expenses as well.',
   },
 
   {

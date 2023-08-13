@@ -232,7 +232,7 @@ main {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-left: 143px;
   padding-right: 143px;
   gap: 24px;
@@ -250,6 +250,29 @@ main {
 
 #card1 {
   background-image: url(./Images/First-project.PNG);
+}
+
+#card2 {
+  background-image: url(./Images/Second-project.PNG);
+}
+
+#card3 {
+  background-image: url(./Images/Third-project.png);
+}
+
+#card4 {
+  background-image: url(./Images/Fourth-project.jpg);
+}
+
+#card5 {
+  background-image: url(./Images/Fifth-project.PNG);
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 {
   background-size: cover;
   background-repeat: no-repeat;
 }
