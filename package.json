@@ -1,7 +1,7 @@
 {
   "name": "portfolio-desktop",
   "version": "1.0.0",
-  "description": "<!-- TABLE OF CONTENTS -->",
+  "description": "This is a simple portfolio that showcases my recent projects. It has contact section should incase you want to reach me",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
