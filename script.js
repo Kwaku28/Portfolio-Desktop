@@ -11,6 +11,21 @@ document.querySelectorAll('ul.links > li').forEach((n) => n.addEventListener('cl
   navLink.classList.remove('active');
 }));
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    } else {
+      entry.target.classList.remove('animate');
+    }
+  });
+});
+
+const hiddenElement = document.querySelectorAll('.card');
+hiddenElement.forEach((element) => {
+  observer.observe(element);
+});
+
 const project = [
   {
     id: '1',
@@ -19,7 +34,6 @@ const project = [
     liveLink: 'https://kwaku28.github.io/architectural-summit/',
     sourceLink: 'https://github.com/Kwaku28/architectural-summit',
     technologies: [
-      'Github',
       'Javascript',
       'Bootstrap',
       'HTML5',
@@ -36,9 +50,8 @@ const project = [
     liveLink: 'https://kwaku28.github.io/leaderboard/dist/',
     sourceLink: 'https://github.com/Kwaku28/leaderboard',
     technologies: [
-      'Webpack',
-      'Github',
       'Javascript',
+      'Webpack',
       'Bootstrap',
       'HTML5',
       'CSS3',
@@ -55,10 +68,9 @@ const project = [
     sourceLink: 'https://github.com/Kwaku28/Bookstore',
     technologies: [
       'React',
-      'Github',
       'Javascript',
       'Bootstrap',
-      'Render',
+      'Jest',
       'Redux',
     ],
     description:
@@ -73,11 +85,10 @@ const project = [
     sourceLink: 'https://github.com/Kwaku28/Space-Travelers-Hub',
     technologies: [
       'React',
-      'Github',
+      'CSS3',
       'Javascript',
-      'Bootstrap',
-      'Render',
       'Redux',
+      'Jest',
     ],
     description:
       'This web application is for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. It also gives the option to cancel reservations and leave the space mission anytime. The MyProfile section provides an overview of your booked rockets and joined missions.',
@@ -90,12 +101,12 @@ const project = [
     liveLink: 'https://grow-rich.onrender.com/',
     sourceLink: 'https://github.com/Kwaku28/Grow-Rich',
     technologies: [
-      'Render',
-      'Github',
+      'Ruby on Rails',
       'Ruby',
-      'Rails',
+      'Devise',
+      'HTML5',
+      'CSS3',
       'Bootstrap',
-      'Terminal',
     ],
     description:
       'Grow Rich is a mobile web application where you can manage your budget: you have a list of expenses associated with a budget, so that you can see how much money you spent and on what. You have the flexibility to add budget and expenses as well.',
@@ -103,20 +114,20 @@ const project = [
 
   {
     id: '6',
-    featuredImage: './Images/Snapshoot-Portfolio.png',
-    name: 'Keeping track of hundreds of components',
-    liveLink: 'https://kwaku28.github.io/Portfolio-Desktop/',
-    sourceLink: 'https://github.com/Kwaku28/Portfolio-Desktop',
+    featuredImage: 'Images/Sixth-project.jpg',
+    name: 'Resort Booking',
+    liveLink: 'https://github.com/Leeoasis/resort-booking-frontend-app',
+    sourceLink: 'https://github.com/Leeoasis/resort-booking-frontend-app',
     technologies: [
-      'Codekit',
-      'Github',
-      'Javascript',
-      'Bootstrap',
-      'Terminal',
-      'Codepen',
+      'Rails',
+      'Ruby',
+      'JWT',
+      'HTML5',
+      'CSS3',
+      'Devise',
     ],
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+      'Resort Booking is a web application that offers a diverse selection of luxurious accommodations and amenities. Find your slice of paradise, effortlessly plan your trip, and make memories that last a lifetime with ResortHub.',
   },
 ];
 
@@ -201,3 +212,11 @@ formValidation.addEventListener('submit', (event) => {
     error.innerHTML = 'Please Email should be in lowercase';
   }
 });
+
+const progressBar = document.getElementById('progressbar');
+const totalHeight = document.body.scrollHeight - window.innerHeight;
+
+window.onscroll = () => {
+  const progress = (window.pageYOffset / totalHeight) * 100;
+  progressBar.style.height = `${progress}%`;
+};
