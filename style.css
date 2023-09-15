@@ -15,6 +15,60 @@ body {
   background: #e5e5e5;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #36b37e, #9ec7b6);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #36b37e, #9ec7b6);
+  filter: blur(10px);
+}
+
+#progressbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #36b37e, #9ec7b6);
+  filter: blur(30px);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -56,6 +110,7 @@ footer a {
 
 .links {
   display: flex;
+  position: absolute;
   gap: 20px;
   list-style: none;
 }
@@ -65,7 +120,7 @@ footer a {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   text-decoration: none;
-  transition: all 0.3s ease-out 0s;
+  transition: 0.3s ease;
 }
 
 .social li a {
@@ -86,6 +141,7 @@ footer .social a {
   width: 100%;
   border: 1px solid #28352f;
   display: block;
+  transition: all 0.5s ease-in;
 }
 
 .vector {
@@ -93,7 +149,7 @@ footer .social a {
   width: 18px;
   height: 12px;
   right: 10%;
-  z-index: 5;
+  z-index: 3;
   position: absolute;
   display: none;
 }
@@ -167,6 +223,7 @@ p {
   border-radius: 4px;
   color: #172b4d;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .works li {
@@ -185,6 +242,7 @@ p {
   line-height: 16px;
   color: #36b37e;
   transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 
 .lang li {
@@ -199,6 +257,7 @@ p {
   line-height: 16px;
   color: #36b37e;
   transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 
 .social li:hover {
@@ -246,6 +305,45 @@ main {
   height: 474px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.animate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+.card:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.card:nth-child(6) {
+  transition-delay: 0.6s;
 }
 
 #card1 {
@@ -268,11 +366,16 @@ main {
   background-image: url(./Images/Fifth-project.PNG);
 }
 
+#card6 {
+  background-image: url(./Images/Sixth-project.jpg);
+}
+
 #card1,
 #card2,
 #card3,
 #card4,
-#card5 {
+#card5,
+#card6 {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -297,8 +400,11 @@ main {
 }
 
 .server {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: grid; */
+  /* grid-template-columns: auto auto auto; */
   gap: 8px;
 }
 
@@ -324,11 +430,14 @@ main {
   padding: 12px;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
 }
 
 .button:hover {
-  background: #36b37f;
-  color: #fff;
+  background: #eee;
+  color: #36b37f;
+  transform: scale(1.08);
 }
 
 .button:active {
@@ -341,8 +450,8 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  z-index: 10;
+  transition: 600ms ease-in-out;
+  z-index: 4;
   background: #fff;
   border: 1px solid #ebecf0;
   border-radius: 20px;
@@ -448,8 +557,9 @@ main {
 }
 
 .modal-content .server {
-  grid-template-columns: auto auto auto auto auto auto;
-  width: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #overlay {
@@ -656,6 +766,13 @@ footer .social {
   gap: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     background-image: none;
@@ -690,7 +807,7 @@ footer .social {
     left: 100%;
     height: 92vh;
     transition: all 0.5s ease-in;
-    z-index: 4;
+    z-index: 2;
     background: #fff;
     mix-blend-mode: normal;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -801,7 +918,9 @@ footer .social {
   }
 
   .container {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 
   .projects {
@@ -818,7 +937,7 @@ footer .social {
 
   .modal-btns {
     position: absolute;
-    top: 110%;
+    top: 90%;
     right: 2%;
     width: 95%;
     height: 55px;
@@ -836,10 +955,6 @@ footer .social {
 
   .modal-content {
     gap: 0;
-  }
-
-  .modal-content .server {
-    grid-template-columns: auto auto auto;
   }
 
   .text1 {
@@ -921,7 +1036,7 @@ footer .social {
 
 @media screen and (max-width: 640px) {
   .modal-btns {
-    top: 125%;
+    top: 90%;
   }
 }
 
@@ -946,7 +1061,7 @@ footer .social {
 
   .container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     gap: 24px;
     padding: 62px 24px;
   }
@@ -970,7 +1085,7 @@ footer .social {
   }
 
   .modal-btns {
-    top: 122%;
+    top: 90%;
     right: 2%;
     width: 95%;
     height: 45px;
@@ -988,11 +1103,6 @@ footer .social {
 
   .modal-content {
     gap: 0;
-  }
-
-  .modal-content .server {
-    grid-template-columns: auto auto auto;
-    gap: 5px;
   }
 
   .text1 {
@@ -1094,7 +1204,7 @@ footer .social {
   }
 
   .modal-btns {
-    top: 140%;
+    top: 100%;
   }
 
   .about {
