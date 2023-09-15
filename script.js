@@ -11,6 +11,21 @@ document.querySelectorAll('ul.links > li').forEach((n) => n.addEventListener('cl
   navLink.classList.remove('active');
 }));
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    } else {
+      entry.target.classList.remove('animate');
+    }
+  });
+});
+
+const hiddenElement = document.querySelectorAll('.card');
+hiddenElement.forEach((element) => {
+  observer.observe(element);
+});
+
 const project = [
   {
     id: '1',
@@ -197,3 +212,11 @@ formValidation.addEventListener('submit', (event) => {
     error.innerHTML = 'Please Email should be in lowercase';
   }
 });
+
+const progressBar = document.getElementById('progressbar');
+const totalHeight = document.body.scrollHeight - window.innerHeight;
+
+window.onscroll = () => {
+  const progress = (window.pageYOffset / totalHeight) * 100;
+  progressBar.style.height = `${progress}%`;
+};
