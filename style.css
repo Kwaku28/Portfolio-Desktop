@@ -36,6 +36,7 @@ body {
   height: 100%;
   background: linear-gradient(to top, #36b37e, #9ec7b6);
   animation: animate 5s linear infinite;
+  border-radius: 5px;
 }
 
 @keyframes animate {
@@ -86,7 +87,7 @@ header {
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 24px;
+  height: 4rem;
 }
 
 footer a {
@@ -111,15 +112,22 @@ footer a {
 }
 
 .links {
+  width: 100vw;
+  height: 4rem;
   display: flex;
-  position: absolute;
-  gap: 20px;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  gap: 2.5rem;
   list-style: none;
+  z-index: 2;
+  background: #d8dad9;
 }
 
 .links li a {
   color: #172b4d;
-  font-size: 15px;
+  font-size: 1.8em;
   font-family: "Inter", sans-serif;
   text-decoration: none;
   transition: 0.3s ease;
@@ -136,7 +144,7 @@ footer .social a {
 
 .links li a:hover {
   color: #36b37f;
-  font-size: 22px;
+  font-size: 2em;
 }
 
 .vector span {
@@ -171,12 +179,52 @@ h1 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 3em;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
+
+  /* width: 50vw; */
 }
+
+/* .heading {
+  width: 100%;
+  height: 100%;
+}
+
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #fff;
+  text-align: center;
+}
+
+@keyframes stroke {
+  0% {
+    fill: #e5e5e5;
+    stroke: #e5e5e5;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: #172b4d;
+    stroke: #4d6081;
+  }
+  80% {
+    fill: #172b4d;
+    stroke: #4d6081;
+    stroke-width: 2;
+  }
+  100% {
+    fill: #172b4d;
+    stroke: #4d6081;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+} */
 
 h2 {
   font-family: "Inter", sans-serif;
@@ -451,7 +499,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 600ms ease-in-out;
-  z-index: 4;
+  z-index: 5;
   background: #fff;
   border: 1px solid #ebecf0;
   border-radius: 20px;
@@ -573,6 +621,7 @@ main {
   background: #484849;
   mix-blend-mode: multiply;
   pointer-events: none;
+  z-index: 3;
 }
 
 #overlay.active {
@@ -776,12 +825,16 @@ footer .social {
 @media screen and (max-width: 768px) {
   header {
     background-image: none;
-    padding-bottom: 0;
+    padding-bottom: 10rem;
   }
 
   .header {
+    position: fixed;
     width: 100%;
     justify-content: space-between;
+    background: #d8dad9;
+    align-items: center;
+    z-index: 2;
   }
 
   .logo {
@@ -800,6 +853,8 @@ footer .social {
 
   .links {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
     width: 100%;
     position: fixed;
     overflow: hidden;
@@ -887,6 +942,7 @@ footer .social {
     text-align: center;
     color: #172b4d;
     width: 280px;
+    margin-top: 3rem;
   }
 
   h2 {
