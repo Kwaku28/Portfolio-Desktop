@@ -116,7 +116,7 @@ const project = [
     id: '6',
     featuredImage: 'Images/Sixth-project.jpg',
     name: 'Resort Booking',
-    liveLink: 'https://github.com/Leeoasis/resort-booking-frontend-app',
+    liveLink: 'https://resort-app-frontend.onrender.com/',
     sourceLink: 'https://github.com/Leeoasis/resort-booking-frontend-app',
     technologies: [
       'Rails',

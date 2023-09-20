@@ -172,7 +172,7 @@ footer .social a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 160px;
+  padding-top: 160px;
 }
 
 h1 {
@@ -926,7 +926,7 @@ footer .social {
 
   .portfolio {
     height: 650px;
-    padding: 20px 24px 0 24px;
+    padding: 60px 24px 0 24px;
     margin-top: 0;
     background-image: url(./Images/Header-llustration-desktop.png);
     background-size: contain;
