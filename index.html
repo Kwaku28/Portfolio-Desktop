@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="progressbar"></div>
-    <div id="scrollpath"></div>
     <header>
       <nav class="header">
         <div class="logo">
           <a href="#">Welcome</a>
         </div>
 
-        <ul class="links">
-          <li><a href="#portfolio">Porfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="links">
+          <a href="#portfolio" style="--i: 1">Porfolio</a>
+          <a href="#about" style="--i: 2">About</a>
+          <a href="#contact" style="--i: 3">Contact</a>
+        </div>
 
         <div class="vector">
           <span></span>
@@ -41,25 +39,23 @@
           and have a project you need coded, don't hesitate to contact me.
         </p>
 
-        <ul class="social">
-          <li>
-            <a href="https://github.com/Kwaku28" target="_blank"
-              ><ion-icon name="logo-github"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/lawrence-amoafo-appoh/"
-              target="_blank"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/lawrence_amoafo" target="_blank"
-              ><ion-icon name="logo-twitter"></ion-icon
-            ></a>
-          </li>
-        </ul>
+        <div class="social">
+          <a href="https://github.com/Kwaku28" target="_blank" style="--i: 1"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/lawrence-amoafo-appoh/"
+            style="--i: 2"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://twitter.com/lawrence_amoafo"
+            target="_blank"
+            style="--i: 3"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </div>
 
         <a href="#main" class="disabled">
           <img src="./Images/Disabled.png" alt="scroll" />
@@ -334,28 +330,19 @@
     <footer>
       <hr />
 
-      <ul class="social">
-        <li>
-          <a href="https://github.com/Kwaku28"
-            ><ion-icon name="logo-github"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/lawrence-amoafo-90b57213a/"
-            ><ion-icon name="logo-linkedin"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/lawrence_amoafo"
-            ><ion-icon name="logo-twitter"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="https://web.facebook.com/lawrence.amoafo"
-            ><ion-icon name="logo-facebook"></ion-icon
-          ></a>
-        </li>
-      </ul>
+      <div class="social">
+        <a href="https://github.com/Kwaku28" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/lawrence-amoafo-appoh/"
+          target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://twitter.com/lawrence_amoafo" target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+      </div>
 
       <a href="mailto:rekenburg777@gmail.com">rekenburg777@gmail.com</a>
     </footer>
