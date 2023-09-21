@@ -16,60 +16,26 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 1vw;
 }
 
-#scrollpath {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-#progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
+::-webkit-scrollbar-thumb {
   background: linear-gradient(to top, #36b37e, #9ec7b6);
-  animation: animate 5s linear infinite;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-@keyframes animate {
-  0%,
-  100% {
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    filter: hue-rotate(360deg);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #27b379;
 }
 
-#progressbar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 100%;
-  background: linear-gradient(to top, #36b37e, #9ec7b6);
-  filter: blur(10px);
+::-webkit-scrollbar-track:hover {
+  background: #b2c9bf;
 }
 
-#progressbar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 100%;
-  background: linear-gradient(to top, #36b37e, #9ec7b6);
-  filter: blur(30px);
+::-webkit-scrollbar-track {
+  background: #cfdbd6;
+  border-radius: 10px;
+  margin-block: 0.2em;
 }
 
 header {
@@ -125,26 +91,40 @@ footer a {
   background: #d8dad9;
 }
 
-.links li a {
+.links a {
+  display: inline-block;
   color: #172b4d;
   font-size: 1.8em;
   font-family: "Inter", sans-serif;
   text-decoration: none;
-  transition: 0.3s ease;
+  animation: slidedown 0.8s forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
-.social li a {
-  font-size: 20px;
+@keyframes slidedown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.social a {
+  font-size: 25px;
   color: #505f79;
+  animation: slideup 0.8s forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
 footer .social a {
   font-size: 30px;
 }
 
-.links li a:hover {
+.links a:hover {
   color: #36b37f;
-  font-size: 2em;
 }
 
 .vector span {
@@ -184,47 +164,8 @@ h1 {
   text-align: center;
   letter-spacing: 0.37px;
   color: #172b4d;
-
-  /* width: 50vw; */
+  animation: slidedown 1s forwards;
 }
-
-/* .heading {
-  width: 100%;
-  height: 100%;
-}
-
-svg text {
-  animation: stroke 5s infinite alternate;
-  stroke-width: 2;
-  stroke: #fff;
-  text-align: center;
-}
-
-@keyframes stroke {
-  0% {
-    fill: #e5e5e5;
-    stroke: #e5e5e5;
-    stroke-dashoffset: 25%;
-    stroke-dasharray: 0 50%;
-    stroke-width: 2;
-  }
-  70% {
-    fill: #172b4d;
-    stroke: #4d6081;
-  }
-  80% {
-    fill: #172b4d;
-    stroke: #4d6081;
-    stroke-width: 2;
-  }
-  100% {
-    fill: #172b4d;
-    stroke: #4d6081;
-    stroke-dashoffset: -25%;
-    stroke-dasharray: 50% 0;
-    stroke-width: 0;
-  }
-} */
 
 h2 {
   font-family: "Inter", sans-serif;
@@ -235,6 +176,18 @@ h2 {
   text-align: center;
   letter-spacing: 0.37px;
   color: #36b37e;
+  animation: slideright 2s forwards;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 p {
@@ -246,6 +199,18 @@ p {
   line-height: 32px;
   text-align: center;
   color: #172b4d;
+  animation: slideup 1s forwards;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .social {
@@ -253,12 +218,6 @@ p {
   gap: 12px;
   margin-top: 34px;
   margin-bottom: 90px;
-}
-
-.social li {
-  text-decoration: none;
-  list-style: none;
-  transition: transform 0.4s;
 }
 
 .server li {
@@ -310,11 +269,7 @@ p {
   cursor: pointer;
 }
 
-.social li:hover {
-  transform: scale(1.5);
-}
-
-.social li a:hover {
+.social a:hover {
   color: #36b37f;
 }
 
@@ -875,13 +830,7 @@ footer .social {
     left: 0;
   }
 
-  .links li {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: 10px 30px;
-  }
-
-  .links li a {
+  .links a {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -890,9 +839,11 @@ footer .social {
     display: flex;
     align-items: center;
     color: #3a4a42;
+    padding-top: 20px;
+    margin: 10px 30px;
   }
 
-  .links li a:hover {
+  .links a:hover {
     font-size: 40px;
   }
 
