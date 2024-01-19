@@ -29,10 +29,10 @@ hiddenElement.forEach((element) => {
 const project = [
   {
     id: '1',
-    featuredImage: 'Images/First-project.PNG',
-    name: 'Architectural Summit',
-    liveLink: 'https://kwaku28.github.io/architectural-summit/',
-    sourceLink: 'https://github.com/Kwaku28/architectural-summit',
+    featuredImage: 'Images/Global-conference.PNG',
+    name: 'Global Conference',
+    liveLink: 'https://mike47ip.github.io/JavascriptCapstone/index.html',
+    sourceLink: 'https://github.com/Mike47ip/JavascriptCapstone',
     technologies: [
       'Javascript',
       'Bootstrap',
@@ -45,14 +45,14 @@ const project = [
 
   {
     id: '2',
-    featuredImage: 'Images/Second-project.PNG',
-    name: 'Leaderboard',
-    liveLink: 'https://kwaku28.github.io/leaderboard/dist/',
-    sourceLink: 'https://github.com/Kwaku28/leaderboard',
+    featuredImage: 'Images/Book-bike.PNG',
+    name: 'Book a motorbike',
+    liveLink: 'https://motorcycle-lksr.onrender.com/',
+    sourceLink: 'https://github.com/Mike47ip/book-an-appointment',
     technologies: [
-      'Javascript',
-      'Webpack',
-      'Bootstrap',
+      'React',
+      'RoR',
+      'Puma',
       'HTML5',
       'CSS3',
     ],
