@@ -62,7 +62,7 @@ const project = [
 
   {
     id: '3',
-    featuredImage: 'Images/Third-project.png',
+    featuredImage: 'Images/Hotel2.PNG',
     name: 'Bookstore',
     liveLink: 'https://tailwind-rv-5phv.vercel.app/',
     sourceLink: 'https://github.com/Mike47ip/tailwind-RV',
@@ -79,10 +79,10 @@ const project = [
 
   {
     id: '4',
-    featuredImage: 'Images/Fourth-project.jpg',
+    featuredImage: 'Images/Todo.PNG',
     name: 'Space Travelers Hub',
-    liveLink: 'https://space-travelers-hub-sum7.onrender.com/',
-    sourceLink: 'https://github.com/Kwaku28/Space-Travelers-Hub',
+    liveLink: 'https://mike47ip.github.io/To_Do_List/dist/',
+    sourceLink: 'https://github.com/Mike47ip/To_Do_List?tab=readme-ov-file',
     technologies: [
       'React',
       'CSS3',
@@ -96,10 +96,10 @@ const project = [
 
   {
     id: '5',
-    featuredImage: 'Images/Fifth-project.PNG',
+    featuredImage: 'Images/Leader.PNG',
     name: 'Grow Rich (Budgeting App)',
-    liveLink: 'https://grow-rich.onrender.com/',
-    sourceLink: 'https://github.com/Kwaku28/Grow-Rich',
+    liveLink: 'https://mike47ip.github.io/Leaderboard/dist/',
+    sourceLink: 'https://github.com/Mike47ip/Leaderboard?tab=readme-ov-file',
     technologies: [
       'Ruby on Rails',
       'Ruby',
@@ -114,10 +114,10 @@ const project = [
 
   {
     id: '6',
-    featuredImage: 'Images/Sixth-project.jpg',
+    featuredImage: 'Images/Bookshop.PNG',
     name: 'Resort Booking',
-    liveLink: 'https://resort-app-frontend.onrender.com/',
-    sourceLink: 'https://github.com/Leeoasis/resort-booking-frontend-app',
+    liveLink: 'https://bookstore-7igy.onrender.com/',
+    sourceLink: 'https://github.com/Mike47ip/bookstore-initialize',
     technologies: [
       'Rails',
       'Ruby',

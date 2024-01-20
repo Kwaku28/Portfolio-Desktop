@@ -352,7 +352,7 @@ main {
 }
 
 #card1 {
-  background-image: url(./Images/Global-conference.PNG);
+  background-image: url(./Images/Conference.AVIF);
 }
 
 #card2 {
@@ -364,17 +364,18 @@ main {
 }
 
 #card4 {
-  background-image: url(./Images/Todo.PNG);
+  background-image: url(./Images/TODO.JPEG);
   background-size: auto;
-  background-position: left;
+  background-position: center;
 }
 
 #card5 {
-  background-image: url(./Images/Fifth-project.PNG);
+  background-image: url(./Images/Leader.PNG);
 }
 
 #card6 {
-  background-image: url(./Images/Sixth-project.jpg);
+  background-image: url(./Images/Bookstore.JPG);
+  background-position: center;
 }
 
 #card1,
@@ -484,9 +485,9 @@ main {
 }
 
 .modal-image {
-  width: 100%;
-  height: 616px;
   transition: transform 0.5s;
+  max-width: 100%;
+  height: auto;
 }
 
 .modal-image:hover {
