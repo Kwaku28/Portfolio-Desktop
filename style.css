@@ -360,11 +360,13 @@ main {
 }
 
 #card3 {
-  background-image: url(./Images/Third-project.png);
+  background-image: url(./Images/Hotel.PNG);
 }
 
 #card4 {
-  background-image: url(./Images/Fourth-project.jpg);
+  background-image: url(./Images/Todo.PNG);
+  background-size: auto;
+  background-position: left;
 }
 
 #card5 {

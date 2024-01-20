@@ -64,8 +64,8 @@ const project = [
     id: '3',
     featuredImage: 'Images/Third-project.png',
     name: 'Bookstore',
-    liveLink: 'https://bookstore-7igy.onrender.com/',
-    sourceLink: 'https://github.com/Kwaku28/Bookstore',
+    liveLink: 'https://tailwind-rv-5phv.vercel.app/',
+    sourceLink: 'https://github.com/Mike47ip/tailwind-RV',
     technologies: [
       'React',
       'Javascript',
